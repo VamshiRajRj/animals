@@ -1,0 +1,158 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f0f0f0;
+}
+.background {
+  flex: 1;
+  background-color: green;
+}
+
+.cat {
+  position: relative;
+  width: 120px;
+  height: 200px;
+}
+
+.ears,
+.head,
+.body,
+.tail {
+  position: absolute;
+}
+
+.ear_l {
+  width: 30px;
+  height: 30px;
+  background-color: #000;
+  clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+  transform: rotate(-35deg);
+  border-radius: 0.25em;
+}
+.ear_r {
+  width: 30px;
+  height: 30px;
+  background-color: #000;
+  clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+  transform: rotate(35deg);
+}
+
+.ears {
+  top: 30px;
+  left: 20px;
+  display: flex;
+  justify-content: space-between;
+  width: 100px;
+}
+
+.head {
+  top: 40px;
+  left: 20px;
+  width: 100px;
+  height: 80px;
+  background-color: #000;
+  border-radius: 50%;
+}
+
+.eyes {
+  position: relative;
+  top: 20px;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.eye {
+  width: 20px;
+  height: 15px;
+  background-color: #03ba98;
+  border-radius: 50%;
+}
+.eye_ball {
+  width: 5px;
+  height: 20px;
+  background-color: #000;
+  border-radius: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.nose {
+  position: absolute;
+  top: 50px;
+  width: 0px;
+  left: 0;
+  right: 0;
+  height: 0px; /* as the half of the width */
+  border-left: 5px solid transparent; /* 100px of height + 10px of border */
+  border-right: 5px solid transparent; /* 100px of height + 10px of border */
+  border-top: 5px solid pink; /* 100px of height + 10px of border */
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.whisk_1 {
+  width: 50px;
+  height: 10px;
+  border: solid 1px #fff;
+  border-color: transparent transparent #fff transparent;
+  border-radius: 0 10px 50%/10px 0;
+  top: 35px;
+  position: absolute;
+  left: -20px;
+}
+.whisk_2 {
+  width: 50px;
+  height: 10px;
+  border: solid 1px #fff;
+  border-color: transparent transparent #fff transparent;
+  border-radius: 0 10px 50%/10px 0;
+  top: 40px;
+  position: absolute;
+  left: -20px;
+  transform: rotate(-16deg);
+}
+.whisk_3 {
+  width: 50px;
+  height: 10px;
+  border: solid 1px #fff;
+  border-color: transparent transparent #fff transparent;
+  border-radius: 0 10px 50%/10px 0;
+  top: 35px;
+  position: absolute;
+  right: -20px;
+}
+.whisk_4 {
+  width: 50px;
+  height: 10px;
+  border: solid 1px #fff;
+  border-color: transparent transparent #fff transparent;
+  border-radius: 0 10px 50%/10px 0;
+  top: 40px;
+  position: absolute;
+  right: -20px;
+  transform: rotate(14deg);
+}
+.body {
+  top: 100px;
+  left: 20px;
+  width: 100px;
+  height: 120px;
+  background-color: #000;
+  border-radius: 50%;
+}
+
+.tail {
+  position: absolute;
+
+  top: 130px;
+  right: -20px;
+  width: 100px;
+  height: 50px; /* as the half of the width */
+  background-color: transparent;
+  border-top-right-radius: 55px; /* 100px of height + 10px of border */
+  border-top-right-radius: 55px; /* 100px of height + 10px of border */
+  border: 10px solid gray;
+  border-bottom: 0;
+}
